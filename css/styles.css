@@ -1,6 +1,7 @@
 /* GLOBAL */
 :root{
     --body-bg:#fff;
+    --heading-color:#000;
     --text-color:#333;
     --main-color:#0a775f;
 }
@@ -30,6 +31,30 @@ img{
     height: auto;
 }
 
+/* BUTTON */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    padding: 16px 24px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.button:active{
+    opacity: 0.6;
+}
+
+.button-green {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
 /* CONTAINER */
 .container{
     width: 100%;
@@ -40,18 +65,24 @@ img{
     margin-left: auto;
 }
 
+/* MAIN-CONTENT */
+    .main-content{
+        flex-grow: 1;
+    }
+
 /* HEADER-INNER-WRAPPER */
 .hero-header-wrapper {
     background-image: url(../img/light-bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;   
 }
 
 /* HEADER */
-.site-header {
+.container-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 40px 50px;
 }
 
 .header-logo-link {
@@ -92,6 +123,7 @@ img{
     color: var(--text-color);
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .sitenav-link:hover{
@@ -100,4 +132,52 @@ img{
 
 .sitenav-link:active{
     opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+    margin:0;
+    padding: 0;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-info-wrapper {
+    width: 100%;
+    max-width: 730px;
+    padding-top: 116px;
+    padding-right: 116px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+}
+
+.hero-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: normal;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.hero-text {
+    margin-top: 0;
+    margin-bottom: 34px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--heading-color);
+}
+
+.hero-img {
+    width: 710px;
+    height: 596px;
+    object-fit: cover;
+}
+
+.hero-img-person{
+    width: 710px;
+    height: 696px;
 }
