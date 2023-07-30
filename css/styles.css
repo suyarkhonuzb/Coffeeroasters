@@ -1,7 +1,8 @@
 /* GLOBAL */
 :root{
     --body-bg:#fff;
-    --text-color:#222;
+    --text-color:#333;
+    --main-color:#0a775f;
 }
 
 html{
@@ -37,4 +38,66 @@ img{
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
+}
+
+/* HEADER-INNER-WRAPPER */
+.hero-header-wrapper {
+    background-image: url(../img/light-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo-link {
+    text-decoration: none;
+}
+
+.header-logo-link:hover {
+    opacity: 0.8;
+}
+
+.header-logo-link:active {
+    opacity: 0.6;
+}
+
+.header-logo-img {
+    width: 234px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* SITENAV */
+.sitenav-list {
+    display: flex;
+}
+
+.sitenav-item{
+    list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 40px;
+}
+.sitenav-link {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sitenav-link:hover{
+    color: var(--main-color);
+}
+
+.sitenav-link:active{
+    opacity: 0.6;
 }
