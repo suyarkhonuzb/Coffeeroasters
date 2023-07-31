@@ -1,6 +1,7 @@
 /* GLOBAL */
 :root{
     --body-bg:#fff;
+    --outline-color:var(--main-color);
     --heading-color:#000;
     --text-color:#333;
     --main-color:#0a775f;
@@ -29,6 +30,12 @@ body{
 img{
     width: 100%;
     height: auto;
+}
+
+/* OUTLINE */
+*:focus{
+    outline: 2px dashed var(--outline-color);
+    outline-offset: 3px;
 }
 
 /* BUTTON */
