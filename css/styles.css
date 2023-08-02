@@ -43,10 +43,11 @@ img{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 193px;
     padding: 16px 24px;
     border-radius: 100px;
     text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .button:hover{
@@ -59,9 +60,11 @@ img{
 
 .button-green {
     background-color: var(--main-color);
-    color: #fff;
 }
 
+.button-brown {
+    background-color: #c99b67;
+}
 /* CONTAINER */
 .container{
     width: 100%;
@@ -341,3 +344,91 @@ img{
     font-weight: 400;
     color: var(--text-color);
 }
+
+/* HOW-IT-WORKS */
+.how-it-works {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.how-it-works-inner {
+    margin: 0;
+    background-image:url(../img/how-it-works-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 50px 30px;
+}
+
+.how-it-works-heading {
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gow-it-works-list {
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+    list-style: none;
+    display: flex;
+}
+
+.how-it-works-item {
+    width: calc(100 / 3 - 20px);
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background-color: #f8f8f2;
+    padding:  20px;
+}
+
+.how-it-works-item-number {
+    margin-top: 0;
+    margin-bottom: 4px;
+    text-align: right;
+    font-size: 64px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.how-it-works-info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.how-it-works-item-heading{
+    width: 100%;
+    max-width: 245px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.how-it-works-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 400;
+    color:var(--text-color);
+    text-align: left;
+}
+
+.how-it-works-link-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
