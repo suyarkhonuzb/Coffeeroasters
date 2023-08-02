@@ -375,6 +375,7 @@ img{
     margin-left: -20px;
     list-style: none;
     display: flex;
+    counter-reset: how-it-works;
 }
 
 .how-it-works-item {
@@ -383,6 +384,7 @@ img{
     width: calc(100% / 3 - 20px);
     margin-bottom: 30px;
     margin-left: 20px;
+    counter-increment: how-it-works;
 }
 
 .how-it-works-item::before{
