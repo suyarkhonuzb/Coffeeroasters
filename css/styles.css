@@ -152,6 +152,7 @@ img{
 
 .hero-container {
     display: flex;
+    position: relative;
 }
 
 .hero-info-wrapper {
@@ -192,12 +193,51 @@ img{
     height: 696px;
 }
 
+.hero-img-logo{
+    position: absolute;
+    right: 590px;
+    bottom: 594px;
+    left: 638px;
+    width: 160px;
+    height: 160px;
+    rotate: -25deg;
+}
+
 /* OUR COLLECTION */
 .index-collection {
     margin-top: 20px;
 }   
 
+.bg-image{
+    position: absolute;
+    width: 402px;
+    height: 300px;
+}
+
+.left-top-image{
+    top: 0;
+    left: -168px;
+    transform: rotate(-22deg);
+}
+
+.right-image{
+    width: 392px;
+    height: 477px;
+    top: 608px;
+    right: -228px;
+    transform: rotate(-22deg);
+}
+
+.left-bottom-image{
+    bottom: 170px;
+    left: -126px;
+    width: 215px;
+    height: 269px;
+    transform: rotate(-7deg);
+}
+
 .index-collection-container {
+    position: relative;
     background-image: url(../img/collection-bg.jpg);
     padding: 50px 143px;
 }
