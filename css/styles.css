@@ -22,6 +22,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Roboto', 'Arial',  sans-serif;
+    overflow-x: hidden;
 }
 
 *, *::before, *::after{
@@ -182,7 +183,12 @@ img{
     color: var(--heading-color);
 }
 
+.hero-img-wrapper{
+    position: relative;
+}
+
 .hero-img {
+    display: block;
     width: 710px;
     height: 596px;
     object-fit: cover;
@@ -195,12 +201,11 @@ img{
 
 .hero-img-logo{
     position: absolute;
-    right: 590px;
-    bottom: 594px;
-    left: 638px;
+    right: 609px;
+    bottom: 600px;
     width: 160px;
     height: 160px;
-    rotate: -25deg;
+    transform: rotate(-25deg);
 }
 
 /* OUR COLLECTION */
@@ -316,8 +321,8 @@ img{
 
 .features-inner {
     padding: 50px 30px 80px;
-    background-image: url(../img/Rectangle\ 116features-bg.jpg);
-    background-size: auto, 703px;
+    background-image: url(../img/Rectangle\ 116features-bg.jpg);   
+     background-size: auto, 703px;
     background-repeat: no-repeat;
 }
 
@@ -345,13 +350,23 @@ img{
     text-align: center;
 }
 
+
 .features-list {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     margin: 0;
     padding: 0;
     margin-left: -20px;
     list-style: none;
+}
+
+.features-badge{
+    width: 140px;
+    height: 144px;
+    position: absolute;
+    top:-50px;
+    left: -30px;
 }
 
 .features-item {
@@ -392,10 +407,20 @@ img{
 }
 
 .how-it-works-inner {
+    position: relative;
     margin: 0;
     background-image:url(../img/how-it-works-bg.jpg);
     background-repeat: no-repeat;
     padding: 50px 30px;
+}
+
+.coffee-sticker{
+    width: 230px;
+    height: 180px;
+    position: absolute;
+    top: 41px;
+    right: 68px;
+    transform: rotate(22deg);
 }
 
 .how-it-works-heading {
@@ -421,6 +446,7 @@ img{
 .how-it-works-item {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: calc(100% / 3 - 20px);
     margin-bottom: 30px;
     margin-left: 20px;
@@ -428,12 +454,24 @@ img{
 }
 
 .how-it-works-item::before{
+    position: relative;
+    z-index: 5;
     content:"";
     width: 60px;
     height: 60px;
     margin-bottom: 20px;
     border:4px solid #c99b67;
     background-color: #f8f8f2;
+}
+
+.how-it-works-item:not(:last-child)::after{
+    content: "";
+    height: 5px;
+    width: 433px;
+    position: absolute;
+    background-image: url(../img/Vector\ 5.svg);
+    background-repeat: no-repeat;
+    top: 30px;
 }
 
 .how-it-works-info {
